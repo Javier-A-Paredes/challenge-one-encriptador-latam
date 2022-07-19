@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #E5E5E5;
+    /* height: 100% */
+}
+
+header {
+    width: 1400px;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.container {
+    margin-top: 50px;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container section {
+    display: inline-block;
+}
+
+textarea {
+    border: 0px;
+    resize: none;
+}
+
+#input-text {
+    font-size: 1.5rem;
+    background-color: #E5E5E5;
+}
+
+.msj-error {
+    color: red;
+    font-size: 0.7rem;
+}
+
+.aviso-texto i,
+.aviso-texto p {
+    display: inline-block;
+    font-size: 0.7rem;
+    color: #495057;
+    /* margin: 10px auto; */
+}
+
+.boton-encriptar {
+    background-color: #0A3871;
+    width: 250px;
+    height: 55px;
+    border-radius: 20px;
+    border: 0px;
+    color: white;
+}
+
+.boton-encriptar:active {
+    background-color: #355680;
+}
+
+.boton-desencriptar {
+    background-color: #D8DFE8;
+    width: 250px;
+    height: 55px;
+    margin-left: 20px;
+    border-radius: 20px;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+}
+
+.boton-desencriptar:active {
+    background-color: #a6bad4;
+}
+
+.texto-encriptado {
+    margin-right: auto;
+    margin-left: auto;
+    background-color: white;
+    float: right;
+    position: relative;
+    bottom: 100px;
+    border: 2px white solid;
+    border-radius: 32px;
+    height: 100%;
+    width: 40%;
+    padding: 0px 40px
+}
+
+#encriptacion {
+    background-color: white;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    color: #858686;
+    font-size: 1.5rem;
+}
+
+.texto-encriptado img {
+    margin-top: 50%;
+}
+
+.texto-encriptado h2 {
+    text-align: center;
+    width: 80%;    
+    margin: 0px auto 35px;
+}
+
+.texto-encriptado p {
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 45%;
+}
+
+.boton-copiar {
+    display: block;
+    background-color: white;
+    width: 250px;
+    height: 55px;
+    border-radius: 20px;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+    margin: 10px auto 50px;
+    
+}
+
+.boton-copiar:hover {
+    background-color: #a7cbd1;
+}
+
+.boton-copiar:active {
+    background-color: #5c6c6e;
+}
+
+footer p {
+    position: relative;
+    left: 350px;
+    top: 50px;
+    font-size: 0.7rem;
+    color: #495057;
+    width: 1220px;
+}
+
+.invisible {
+    display: none;
+}
+
+.error {
+    border: 1px solid red
+}

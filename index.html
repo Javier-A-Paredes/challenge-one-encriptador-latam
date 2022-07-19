@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Encriptador de texto</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="icon" href="img/alura.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html"><img src="img/logoAlura.png" alt="Logo de Alura"></a></h1>
+    </header>
+    <main>
+        <div class="container">
+            <section class="encriptador">
+                <form class="form-encriptador">
+                    <textarea name="input-text" id="input-text" placeholder="Ingrese el texto aqui" cols="35"
+                        rows="20"></textarea>
+                        <p class="msj-error invisible"></p>
+                    <div class="aviso-texto">
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                        <p>Solo letras minúsculas y sin acentos</p>
+                    </div>
+                    <button class="boton-encriptar">Encriptar</button>
+                    <button class="boton-desencriptar">Desencriptar</button>
+                </form>
+            </section>
+            <section class="texto-encriptado">
+                <textarea name="encriptacion" id="encriptacion" class="invisible" cols="15" rows="20"></textarea>
+                <img src="img/muñeco.png" class="img-sin-msj" alt="Imagen de un muñeco">
+                <h2 class="sin-msj">Ningún mensaje fue encontrado</h2>
+                <p class="instruccion-sin-msj">Ingresa el texto que desees encriptar o desencriptar.</p>
+                <button type="button" class="boton-copiar invisible">Copiar</button>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>Alura Challenge 1- Programa Oracle Next Education - Javier Alejandro Paredes - 2022</p>
+    </footer>
+
+    <script src='js/encriptarDesencriptar.js'></script>
+    <script src="js/botonCodificar.js"></script>
+    <script src="js/botonDesencriptar.js"></script>
+    <script src="js/botonCopiar.js"></script>
+    <script src="js/validarInput.js"></script>
+    <script src="js/mostrarError.js"></script>
+</body>
+
+</html>

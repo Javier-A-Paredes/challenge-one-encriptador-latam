@@ -1,0 +1,33 @@
+let botonDesencriptar = document.querySelector('.boton-desencriptar')
+
+
+botonDesencriptar.addEventListener('click', function (event) {
+    event.preventDefault()
+
+
+    let letras = ['e', 'i', 'a', 'o', 'u']
+    let codigos = ['enter', 'imes', 'ai', 'ober', 'ufat']
+
+    let texto = form['input-text'].value
+
+    if (validarInput(texto) || texto.length == 0) {
+        // botonEncriptar.disabled = true; 
+        if (texto.length == 0) {
+            msjError.textContent = 'No se ingresaron caracteres'
+        } else {
+            msjError.textContent = 'Se ingresó una mayúscula o algun carácter especial'
+        }
+        mostrarError(true)
+        return;
+    } else {
+        mostrarError(false)
+        let textoEncriptado = encriptarDesencriptar(texto, codigos, letras)
+        textoOutput.textContent = textoEncriptado
+
+        imagenSinMensaje.classList.add('invisible')
+        avisoSinMensaje.classList.add('invisible')
+        instruccionSinMsj.classList.add('invisible')
+        botonCopiar.classList.remove('invisible')
+        textoOutput.classList.remove('invisible')
+    }
+})
